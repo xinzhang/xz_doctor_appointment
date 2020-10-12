@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:xz_doctor_appoint/components/search_%20bar.dart';
 import 'package:xz_doctor_appoint/constant.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -28,7 +29,24 @@ class HomeScreen extends StatelessWidget {
               SizedBox(
                 height: 50,
               ),
-              
+              Padding(
+                padding: EdgeInsets.symmetric(horizontal: 30),
+                child: Text(
+                  'Find Your Desired\nDoctor',
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 32,
+                    color: kTitleTextColor,
+                  ),
+                ),
+              ),
+              SizedBox(
+                height: 30,
+              ),
+              Padding(
+                padding: EdgeInsets.symmetric(horizontal: 30),
+                child: SearchBar(),
+              )
             ],
           )),
         ));
